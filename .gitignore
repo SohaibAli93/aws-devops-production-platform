@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Environment variables
+.env
+*.env
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ansible
+*.retry
+
+# Secrets
+*.pem
+*.key
+credentials*
