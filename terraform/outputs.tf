@@ -57,3 +57,12 @@ output "private_route_table_ids" {
     aws_route_table.private_2.id
   ]
 }
+output "backend_ecr_url" {
+  description = "ECR repository URL for backend"
+  value       = aws_ecr_repository.backend.repository_url
+}
+
+output "frontend_ecr_url" {
+  description = "ECR repository URL for frontend"
+  value       = aws_ecr_repository.frontend.repository_url
+}
