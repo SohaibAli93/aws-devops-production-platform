@@ -49,3 +49,11 @@ output "public_route_table_id" {
   description = "Public route table ID"
   value       = aws_route_table.public.id
 }
+output "private_route_table_ids" {
+  description = "IDs of the private route tables"
+
+  value = [
+    aws_route_table.private_1.id,
+    aws_route_table.private_2.id
+  ]
+}
